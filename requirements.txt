@@ -1,0 +1,7 @@
+click>=7.1.2
+numpy
+Bio
+pywavelets
+scipy
+Cython
+biotite
