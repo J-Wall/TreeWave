@@ -3,8 +3,8 @@ TreeWave is an open-source, user-friendly command line tool designed for alignme
 **TreeWave is designed to be compatible with all major operating systems, including Windows, macOS, and Linux.**
 ## Features
 ### Basic features
-- Import a multi fasta file of any genomes type and get phylogenetic tree as a newick file.
-- Import a multi fasta file and get cosine distance matrix as csv file. 
+- Import a multi-fasta file of any genome type and get a phylogenetic tree as a newick file.
+- Import a multi-fasta file and get the cosine distance matrix as a CSV file. 
 ### Additional features 
 - Import a fasta file of one genome and get the distributions of possible and distinct kmers among a specific range of k. 
 
