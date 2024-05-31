@@ -8,8 +8,8 @@ Created on Mon Dec 25 12:11:54 2023
 
 ## mytool 
 import click 
-from app import application
-from app import optimal_K
+from scripts import application
+from scripts import optimal_K
 
 @click.group()
 def cli():
