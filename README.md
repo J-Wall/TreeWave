@@ -1,6 +1,6 @@
 # TreeWave
 TreeWave is an open-source, user-friendly command line tool designed for alignment-free phylogeny reconstruction. It leverages the Frequency Chaos Game Representation (FCGR) to transform genomic sequences into a frequency matrix. Subsequently, TreeWave employs the Discrete Wavelet Transform (DWT) to perform genomic signal processing. TreeWave takes as input a multi-fasta file and returns resulting dendrogram as a newick file. 
-**Treewave is designed to be compatible with all major operating systems, including Windows, macOS, and Linux.**
+**TreeWave is designed to be compatible with all major operating systems, including Windows, macOS, and Linux.**
 ## Features
 ### Basic features
 - Import a multi fasta file of any genomes type and get phylogenetic tree as a newick file.
