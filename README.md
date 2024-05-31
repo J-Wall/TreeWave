@@ -55,7 +55,7 @@ treewave gettree -k 13 Data/Streptococcus/all_strepto.fasta tree.nwk
 After running the provided command lines, you will obtain the phylogenetic trees as a Newick files. To visualize these Newick files, you can use one of the following tools:
 -  FigTree : http://tree.bio.ed.ac.uk/software/figtree/
 - iTOL (Interactive Tree of Life) : https://itol.embl.de/
-- Dendroscope : http://ab.inf.uni-tuebingen.de/software/dendroscope/
+- Phylo.io : https://phylo.io/
 
 ### Other usages
 - **Generate cosine distance matrix from multi-fasta file**
