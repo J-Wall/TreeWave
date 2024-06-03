@@ -33,6 +33,6 @@ setup(
     ],
     entry_points = '''
         [console_scripts]
-        treewave=my_tool:cli
+        treewave=treewave:cli
     '''
 )
