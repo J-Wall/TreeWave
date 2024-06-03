@@ -8,14 +8,16 @@ Created on Fri May  3 14:05:11 2024
 
 import pandas as pd
 
-def read_fasta(file_path):
-    """Reads a FASTA file and returns the DNA sequence."""
-    with open(file_path, 'r') as f:
-        f.readline()
-        sequence = ''.join(line.strip() for line in f)
-    return sequence
+def count_kmers_in_range(file, kmin, kmax, outfile):
+    results = []
+    sequence = read_fasta(file)
+    for k in range(kmin,kmax+1):
+        total_kmers,unique_kmers,distinct_kmers = get_kmers_distribution(sequence,k)
+        results.append({'k':k,'total kmers':total_kmers,'unique kmers':unique_kmers,'distinct kmers':distinct_kmers})
+    df = pd.DataFrame(results)
+    df.to_csv(outfile)
 
-def count_kmers(sequence, k):
+def get_kmers_distribution(sequence, k):
     """Counts the number of total, unique, and distinct k-mers in a DNA sequence."""
     total_kmers = len(sequence) - k + 1
     kmers_dict = {}
@@ -30,12 +32,14 @@ def count_kmers(sequence, k):
     return total_kmers, unique_kmers, distinct_kmers
 
 
-def kmer_range(file,kmin,kmax,outfile):
-    results = []
-    sequence = read_fasta(file)
-    for k in range(kmin,kmax+1):
-        total_kmers,unique_kmers,distinct_kmers = count_kmers(sequence,k)
-        results.append({'k':k,'total kmers':total_kmers,'unique kmers':unique_kmers,'distinct kmers':distinct_kmers})
-    df = pd.DataFrame(results)
-    df.to_csv(outfile)
+def read_fasta(file_path):
+    """Reads a FASTA file and returns the DNA sequence."""
+    with open(file_path, 'r') as f:
+        f.readline()
+        sequence = ''.join(line.strip() for line in f)
+    return sequence
+
+
+
+
 
