@@ -47,9 +47,9 @@ treewave gettree -k [KMER_LENGTH] [INPUTFILE] [OUTPUTFILE]
 ```
 Replace [KMER_LENGTH] with the desired k-mer length, [INPUT_FILE] with the path to the multi-FASTA file containing genomic sequences, and [OUTPUT_FILE] with the desired path for the Newick output file.
 
-**Example** : Phylogenetic tree inference of whole bacteria genomes with k=13. Multi fasta file is under DATA folder. 
+**Example** : Phylogenetic tree inference of whole human mitochondrial genomes with k=9. Multi fasta file is under DATA folder. 
 ```sh
-treewave gettree -k 13 Data/Streptococcus/streptococcus.fasta tree.nwk
+treewave gettree -k 9 Data/Human_MtDna/mtdna.fasta tree.nwk
 ```
 ### Suggested Visualization Tools for Newick Files
 After running the provided command lines, you will obtain the phylogenetic trees as a Newick files. To visualize these Newick files, you can use one of the following tools:
