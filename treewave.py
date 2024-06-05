@@ -26,7 +26,7 @@ def gettree(klength, inputfile, outputfile):
     click.echo(f"Newick file created at {outputfile}")
 
 @cli.command()
-@click.option('k', '--klength', type=int, required=True, help='K-mer length')
+@click.option('-k', '--klength', type=int, required=True, help='K-mer length')
 @click.argument('inputfile', type=click.Path(exists=True))
 @click.argument('outputfile', type=click.Path())
 def getmatrix(klength, inputfile, outputfile):
