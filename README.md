@@ -17,7 +17,7 @@ To install TreeWave, it is recommended to create and activate a virtual environm
 1.	Clone the repository or download compressed source code files and navigate to the folder TreeWave
 
 ```sh
-Git clone link
+Git clone https://github.com/nasmaB/TreeWave.git
 Cd TreeWave 
 ```
 2.	Open your terminal/Command Prompt, create virtual environment treewave_venv and activate it 
