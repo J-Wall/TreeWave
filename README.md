@@ -66,7 +66,7 @@ Replace [KMER_LENGTH] with the desired k-mer length, [INPUT_FILE] with the path 
 
 - **Possible and distinct K-mers distribution among a genome for a range of k**
 ```sh
-treewave kmers-count [GENOME.FASTA] -kmin [KMIN] -kmax [KMAX]
+treewave getkmers [GENOME.FASTA] -kmin [KMIN] -kmax [KMAX] [OUTPUTFILE]
 ```
 This command generates a csv file containing the number of total and distinct kmers among genome.fasta for each k in the range [KMIN,KMAX]
 ## License
