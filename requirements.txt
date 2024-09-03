@@ -1,5 +1,5 @@
 click>=7.1.2
-numpy
+numpy<2.0
 Bio
 pywavelets
 scipy
