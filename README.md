@@ -25,11 +25,6 @@ cd TreeWave
 virtualenv treewave_venv 
 source treewave_venv/bin/activate 
 ```
-- On Windows
-```sh
-virtualenv treewave_venv 
-treewave_venv\Scripts\activate
-```
 3. TreeWave installation using pip. Execute the following command in the root of TreeWave folder 
 ```sh
 pip install -e . 
